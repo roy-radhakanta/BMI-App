@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measure Your BMI</title>
+    <link rel="stylesheet" href="css/bmi.css">
+</head>
+
+<body class="body">
+
+
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="left__side w-70">
+                    <div class="w-100 show__selected flex align-items-center justify-content-between">
+                        <div class="w-30 show__selected--gender after__border">
+                            <p>Gender</p>
+                        </div>
+                        <div class="w-30 show__selected--weight after__border">
+                            <p>Weight</p>
+                        </div>
+                        <div class="w-30 show__selected--height">
+                            <p>height</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="w-50">
+                            <div class="box mt-top-medium">
+                                <div class="box__heading">
+                                    <h3>gender</h3>
+                                </div>
+                                <div class="box__body">
+                                    <div class="flex">
+                                        <div class="w-50 box__svg--img text-center">
+                                            <img src="images/male.svg" alt="">
+                                            <h4>MALE</h4>
+                                        </div>
+                                        <div class="w-50 box__svg--img text-center">
+                                            <img src="images/female.svg" alt="">
+                                            <h4>FEMALE</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box mt-top-medium">
+                                <div class="box__heading flex justify-content-between align-items-center">
+                                    <h3>weight</h3>
+                                    <select name="" id="" class="select__custom">
+                                        <option value="kg">KG</option>
+                                        <option value="kg">LBS</option>
+                                    </select>
+                                </div>
+                                <div class="box__body">
+                                    <div class="flex align-items-center justify-content-center">
+                                        <div class="weight__machine flex justify-content-center align-items-center">
+                                            <div class="input__take">
+                                                <input type="text" value="75" id="weight__take">
+                                            </div>
+                                            <div class="foot">
+                                                <img src="images/footprint.svg" alt="">
+                                                <img src="images/footprint.svg" alt="">
+                                            </div>
+                                            <div class="center-point flex justify-content-center align-items-center">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="w-50">
+                            <div class="box mt-top-medium height__box">
+                                <div class="box__heading flex justify-content-between align-items-center">
+                                    <h3>height</h3>
+                                    <select name="" id="" class="select__custom">
+                                        <option value="ft">FT</option>
+                                        <option value="in">IN</option>
+                                        <option value="cm">CM</option>
+                                        <option value="mm">MM</option>
+                                    </select>
+                                </div>
+                                <div class="box__body human__body--box">
+                                    <div class="flex align-items-center justify-content-center">
+                                        <img src="images/standing-human-body-silhouette.svg" alt="" class="human__body"
+                                            id="humanBody">
+                                        <div class="range__line">
+                                            <input type="range" name="" id="height" step="0.1" min="0" max="8"
+                                                value="0" orient="vertical">
+                                                <canvas id="canvasVertical" class="canvasVertical"></canvas>
+                                            <div class="line__height" id="lineR"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="right__side w-30">
+                    <div class="box height__box">
+                        <div class="box__heading flex justify-content-between align-items-center">
+                            <h3>Your BMI</h3>
+                        </div>
+                        <div class="box__body bmi__box--result pb-0">
+                           <div class="result__box">
+                               <div class="bmi__status">
+                                   <h2>Normal</h2>
+                                   <img src="images/standing-human-body-silhouette.svg" alt="">
+                               </div>
+                               <div class="bmi__stat">
+                                   <h4>24</h4>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
