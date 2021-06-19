@@ -294,13 +294,15 @@ html {
 
 
 .box__body input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none; 
-  appearance: none;
-  width: 25px; 
-  height: 25px; 
-  background: transparent; 
+/* appearance: none;
+-webkit-appearance: none;
+width: 7px;
+  height: 30px; 
+  background: #80bbff; 
+  border: none; */
+  /* border-top: 3px solid black; */
+  border-radius: 0;
   cursor: pointer; 
-  border-radius: 50%;
 }
 
 .box__body input[type="range"]::-moz-range-thumb {
@@ -407,3 +409,21 @@ html {
 .result__box{
   margin-top: 2.5rem;
 }
+
+/* .box__body input[type="range"] {
+  position: absolute;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: 0;
+  width: 28rem;
+  -webkit-transform: rotate(270deg);
+  bottom: 0;
+  height: 1.2rem;
+  top: 14rem;
+  right: -13.5rem;
+} */

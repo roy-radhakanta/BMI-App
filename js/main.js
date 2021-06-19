@@ -1,9 +1,14 @@
 const range = document.getElementById('height');
 const line = document.getElementById('lineR');
 const humanHeight = document.getElementById('humanBody');
-range.value = 0;
+// range.value = 0;
 
-
+var whichBrowser = function getBrowser() {
+    if( navigator.userAgent.indexOf("Chrome") != -1 ) {
+      return "Chrome";
+    } 
+  }
+  var brws = whichBrowser()
 range.oninput = function(){
     const rangeValue = range.value;
     const min = range.min ? range.min : 0;
@@ -15,14 +20,33 @@ range.oninput = function(){
         humanHeight.style.height = `calc(${newValue}% + (${2 - newValue * 0.15}px))`;
  
     
-    document.querySelector('.line__height').setAttribute('data-before', rangeValue+"ft.");
+    document.querySelector('.line__height').setAttribute('data-before', rangeValue + "ft.");
 
     console.log(rangeValue);
 }
 
 var cnvs = document.getElementById("canvasVertical");
-cnvs.width = range.clientWidth;
-cnvs.height = range.clientHeight;
+
+if(brws == "Chrome"){
+    cnvs.width = range.clientWidth;
+    cnvs.height = range.clientHeight;
+    range.style.position = "absolute";
+    range.style.appearance = "none";
+    range.style.background = "rgb(211 211 211 / 18%)";
+    range.style.outline = "none";
+    range.style.opacity = "0.7";
+    range.style.borderRadius = "0";
+    range.style.transform = "rotate(270deg)";
+    range.style.height = "1.2rem";
+    range.style.width = "28rem";
+    range.style.top = "14rem";
+    range.style.right = "-13.5rem";
+    range.style.bottom = "0";
+}else{
+    cnvs.width = range.clientWidth;
+    cnvs.height = range.clientHeight;
+}
+
 var ctx = cnvs.getContext("2d");
 
 ctx.fillRect(4, 1, 15, 1);
@@ -52,3 +76,5 @@ ctx.fillRect(8, 86, 15, 1);
 ctx.fillRect(8, 91, 15, 1);
 ctx.fillRect(8, 96, 15, 1);
 ctx.fillRect(8, 101, 15, 1);
+
+
