@@ -215,7 +215,12 @@ var weightTake = 0;
 
 enterWeight.addEventListener('input', function(){
     weightTake = parseInt(enterWeight.value);
-    weightBoard.textContent = weightTake + ' KG';
+    if(weightTake !== ' '){
+        weightBoard.textContent = weightTake + ' KG';
+    }else{
+        weightBoard.textContent = 0 + ' KG';
+    }
+   
     dataBase.weight = weightBoard.textContent;    
 });
 
@@ -272,14 +277,18 @@ var bgColorImg = function(status){
     if (status === "underweight") {
         reslutBackground.style.background = "#ffcb00";
         resultStatus.style.color = "#e36b00";
+        resultImg.src = "images/underweight.png";
     } else if(status === "normal") {
         reslutBackground.style.background = "#11ffa6";
         resultStatus.style.color = "#009300";
+        resultImg.src = "images/normal.png";
     }else if(status === "overweight") {
         reslutBackground.style.background = "#ff77";
         resultStatus.style.color = "#ff7741";
+        resultImg.src = "images/overweight.png";
     }else if(status === "obese") {
         reslutBackground.style.background = "#f11";
         resultStatus.style.color = "#ac0000";
+        resultImg.src = "images/obese.png";
     }
 }
