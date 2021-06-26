@@ -18,13 +18,13 @@
                 <div class="left__side w-70">
                     <div class="w-100 show__selected flex align-items-center justify-content-between">
                         <div class="w-30 show__selected--gender after__border">
-                            <p>Gender</p>
+                            <p id="boardGender">Gender</p>
                         </div>
                         <div class="w-30 show__selected--weight after__border">
-                            <p>Weight</p>
+                            <p id="boardWeight">Weight</p>
                         </div>
                         <div class="w-30 show__selected--height">
-                            <p>height</p>
+                            <p id="boardHeight">height</p>
                         </div>
                     </div>
                     <div class="flex">
@@ -33,15 +33,53 @@
                                 <div class="box__heading">
                                     <h3>gender</h3>
                                 </div>
-                                <div class="box__body">
+                                <div class="box__body" id="chooseGendersx">
                                     <div class="flex">
-                                        <div class="w-50 box__svg--img text-center">
-                                            <img src="images/male.svg" alt="">
-                                            <h4>MALE</h4>
+                                        <div class="w-50 box__svg--img text-center genderCh" id="chooseMale">
+                                            <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.5, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 640" style="enable-background:new 0 0 400 640;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<path class="st0 malest" d="M126.8,360.1c0,0-19.7,4.1-28-23.8l3.1-23.8l2.1-92.3l2.1-7.3l15.5-48.7c0,0,1-35.2,27-45.6
+	c0,0,35.2-6.2,35.2-14.5V89.5c0,0-6.2-10.4-6.2-15.5c0,0-15.9-16.7-2.9-21.2V31.3c0,0,2.5-18.2,31.2-20.3c0,0,23.9,0.4,25.3,21.4
+	l-0.4,18.9c0,0,14.7,1.4-3.5,20.3c0,0-0.4,10.5-4.6,14v17.2c0,0,6.3,10.2,36.8,15.8c0,0,30.2,10.2,25.3,42.4
+	c0,0,11.6,23.2,16.5,51.9l3.5,99.3c0,0,2.8,23.2,1.4,27c0,0-7.4,26-27.7,23.2c0,0-3.2-2.8,10.2-14.7c0,0-8.1,4.6-10.5,2.8
+	c0,0,7-8.8,11.2-10.5v-8.4c0,0-6.3,10.9-11.2,10.2c0,0-3.2-2.1,4.6-15.1c0,0,0.4-15.4,6-16.5l0.4-17.5c0,0-8.8-33-13-44.6
+	c0,0-0.7-25.6,0.4-29.1c0,0-10.9-38.9-16.8-41.4c0,0-12.6,46.3-6,73.3c0,0,29.8,86.3-2.8,175c0,0-2.5,30.5-1.1,33.7
+	c0,0-1.8,50.2-6,77.9c0,0-7,25.3-6.7,45.3l10.5,12.3c0,0,17.9,11.9,21,15.8c0,0-4.6,22.1-28.1,6.7L229.3,607c0,0-17.9,1.8-20-6.7
+	c0,0-1.1-14.4,3.9-18.2c0,0,1.1-43.8-1.4-50.5c0,0-7-35.8-1.8-46.7c0,0,2.1-36.5-1.8-42.1c0,0,0-65.6-4.9-68.1l0.4-32.3h-4.2
+	l0.4,31.2c0,0-10.9,63.1-8.1,70.9c0,0-3.2,30.2,0,37.9c0,0,1.8,31.2-4.2,50.9c0,0-5.3,32.6-3.2,44.6c0,0,9.8,23.9-4.9,26.7
+	l-17.5,0.7c0,0-4.2,3.5-14.7,11.9c0,0-19.3,7.4-27.4-4.6c0,0-2.8-8.8,15.4-15.1c0,0,22.8-9.8,24.9-18.6c0,0-5.3-64.2-9.1-71.2
+	c0,0,1.1-56.1,2.5-72.3c0,0-29.5-85.6-10.5-140.3c0,0,20.3-62.4,3.5-117.2l-13.3,37.9c0,0-3.5,49.1-14,72.3c0,0-3.5,14-2.1,20.3
+	l4.9,7l-0.7,7c0,0,6.3,14.7,2.8,18.2l5.6,7c0,0,2.1,7-14-4.2C115.7,343.6,135.7,364,126.8,360.1z"/>
+</svg>
+
+                                            <h4 class="sexDefinder">MALE</h4>
                                         </div>
-                                        <div class="w-50 box__svg--img text-center">
-                                            <img src="images/female.svg" alt="">
-                                            <h4>FEMALE</h4>
+                                        <div class="w-50 box__svg--img text-center genderCh" id="chooseFemale" >
+                                            <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.5, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 640" style="enable-background:new 0 0 400 640;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<path class="st0 femalest" d="M130.8,365.6l-13.6-12.6c0,0-4.7-19.9,0-36.6c0,0,3.7-75.3,3.7-76.9s2.6-16.2,5.2-18.3l2.6-77.4
+	c0,0,1-29.3,34.5-25.6c0,0,14.1-0.5,21.4-12V87.9c0,0-9.4-10.5-7.8-16.2c0,0-14.6-14.1-3.7-20.9c0,0-1.6-34.5,25.1-34.5
+	c0,0,37.7-5.2,30.9,34c0,0,14.1,4.2,0.5,17.8c0,0-2.1,13.6-9.9,17.8v17.8c0,0,6.8,13.1,32.4,15.2c0,0,18.8,4.7,22,26.2
+	c0,0-2.1,70.1,1.6,73.7c0,0,7.3,11.5,7.3,13.6s2.6,74.8,2.6,74.8s8.9,35,2.1,41.8l-13.6,18.3c0,0-5.8,0.5-2.6-6.3l7.8-11l-2.1-20.9
+	h-3.1c0,0,2.6,15.7-3.7,17.8c0,0-2.6-29.8-0.5-31.9s3.1-5.2,3.1-5.2l-2.6-22L259,247.9l-1-25.6l-6.8-31.4l-4.7,11.5l-0.5,35.6
+	c0,0,34,50.2,9.4,158.5l-8.9,38.7l-2.6,31.4c0,0,2.6,48.6-5.8,84.2c0,0-5.8,27.2-5.8,36.6l0.5,5.2c0,0,11,19.9,13.6,17.8
+	c0,0,3.1,17.3-20.9,11c0,0-8.4-13.1-11.5-13.1l-0.5-76.9c0,0-8.9-40.8-1-52.3l0.5-28.2L207.2,329c0,0-4.2-5.2-9.9,1.6L191,450.9
+	l-1.6,20.9c0,0,8.4,41.8,2.1,53.3l-2.1,61.2l1.6,20.4c0,0-7.8,9.9-14.1,15.2l-22-3.1l14.6-23.5c0,0,0-62.8-5.8-65.4
+	c0,0-8.4-53.3-3.7-69.6c0,0-14.1-112.5-19.4-113.5c0,0-2.1-90.5,19.4-105.1c0,0-2.6-53.9-7.3-52.8l-5.8,30.9c0,0,0.5,27.7-2.1,28.8
+	l-13.1,43.4l-1,17.8l4.2,7.8l-0.5,28.2c0,0-5.8-1.6-5.8-4.7l-1-12.6l-1.6,19.9l6.8,13.1L130.8,365.6z"/>
+</svg>
+
+                                            <h4 class="sexDefinder">FEMALE</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -51,7 +89,7 @@
                                     <h3>weight</h3>
                                     <select name="" id="" class="select__custom">
                                         <option value="kg">KG</option>
-                                        <option value="kg">LBS</option>
+                                        <!-- <option value="kg">LBS</option> -->
                                     </select>
                                 </div>
                                 <div class="box__body">
@@ -78,9 +116,9 @@
                                     <h3>height</h3>
                                     <select name="" id="" class="select__custom">
                                         <option value="ft">FT</option>
-                                        <option value="in">IN</option>
+                                        <!-- <option value="in">IN</option>
                                         <option value="cm">CM</option>
-                                        <option value="mm">MM</option>
+                                        <option value="mm">MM</option> -->
                                     </select>
                                 </div>
                                 <div class="box__body human__body--box">
@@ -108,11 +146,11 @@
                         <div class="box__body bmi__box--result pb-0">
                            <div class="result__box">
                                <div class="bmi__status">
-                                   <h2>Normal</h2>
-                                   <img src="images/standing-human-body-silhouette.svg" alt="">
+                                   <h2 id="showStatus">Normal</h2>
+                                   <img id="showImage" src="images/standing-human-body-silhouette.svg" alt="">
                                </div>
                                <div class="bmi__stat">
-                                   <h4>24</h4>
+                                   <h4 id="showResult">24</h4>
                                </div>
                            </div>
                         </div>
