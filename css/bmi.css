@@ -8,6 +8,9 @@
 	--whitesh-color: #e6e6e666;
 	--color-black: #484848;
 	--white: #fff;
+  --green: #29BB00;
+  --yellow: #fba502;
+  --red: #ce0000;
 	--padding: 3rem;
 	--padding-medium: 2rem;
 	--border-radius: 0.2rem;
@@ -362,15 +365,15 @@ width: 7px;
     text-align: center;
     width: 80%;
     margin: auto;
-    background: #11ffa6;
+    background: var(--green);
     border-radius: 1rem;
     padding: 4%;
 }
 
 .bmi__status h2{
     margin-bottom: 1rem;
-    color: #009300;
-    font-size: 2rem;
+    color: #ffffffba;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -441,4 +444,38 @@ width: 7px;
 }
 #Layer_2{
   height: 10rem;
+}
+
+#showStatus{
+  text-transform: uppercase;
+}
+
+.status__standered{
+  padding: 0;
+
+}
+.standered{
+  background: #000;
+  padding: 1rem .5rem;
+  width: 25%;
+}
+.standered p{
+  font-size: .8rem;
+  color:var(--white);
+  text-align: center;
+}
+
+.standered:first-child{
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  background: var(--primary-color);
+}
+.standered:nth-child(2){
+  background: var(--green);
+}
+.standered:nth-child(3){
+  background: var(--yellow);
+}
+.standered:last-child{
+  border-radius:0 var(--border-radius) var(--border-radius) 0;
+  background: var(--red);
 }

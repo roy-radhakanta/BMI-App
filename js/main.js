@@ -275,20 +275,20 @@ var statusBmi = function(bmi){
 //bg according to bmi
 var bgColorImg = function(status){
     if (status === "underweight") {
-        reslutBackground.style.background = "#ffcb00";
-        resultStatus.style.color = "#e36b00";
+        reslutBackground.style.background = "var(--primary-color)";
+        // resultStatus.style.color = "#e36b00";
         resultImg.src = "images/underweight.png";
     } else if(status === "normal") {
-        reslutBackground.style.background = "#11ffa6";
-        resultStatus.style.color = "#009300";
+        reslutBackground.style.background = "var(--green)";
+        // resultStatus.style.color = "#009300";
         resultImg.src = "images/normal.png";
     }else if(status === "overweight") {
-        reslutBackground.style.background = "#ff77";
-        resultStatus.style.color = "#ff7741";
+        reslutBackground.style.background = "var(--yellow)";
+        // resultStatus.style.color = "#F9C846";
         resultImg.src = "images/overweight.png";
     }else if(status === "obese") {
-        reslutBackground.style.background = "#f11";
-        resultStatus.style.color = "#ac0000";
+        reslutBackground.style.background = "var(--red)";
+        // resultStatus.style.color = "#ac0000";
         resultImg.src = "images/obese.png";
     }
 }
